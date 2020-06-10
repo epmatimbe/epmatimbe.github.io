@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="style/all.css" rel="stylesheet" />
+   </head>
+  <body>
+    <div class="">
+      <div class="nav-bar">
+        <ul>
+            <span class="logo">
+              Edson Matimbe
+            </span>
+          <li onclick="scrollto('top')">
+            Home
+          </li>
+          <li onclick="scrollto('services')">
+            Serviços
+          </li>
+          <li onclick="scrollto('skills')">
+            Habilidades
+          </li>
+          <li onclick="scrollto('portfolio')">
+            Portfólio
+          </li>
+          <span class="btn-contact-me">
+              Contacte-me
+            </span>
+        </ul>
+      </div>
+      <div id="top" class="banner">
+        <div>
+          <ul>
+            <li>
+              <p>Eu sou o Edson</p>
+            </li>
+            <li>
+              <p>Edson Matimbe</p>
+            </li>
+
+            <li>
+              <p>FullStack developer & UI/UX Designer</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="img/photo.png" />
+        </div>
+      </div>
+      <div class="introduction-area">
+        <div>
+          <img src="img/photo2.svg" />
+        </div>
+        <div>
+          <span>
+            <p>Apresentação</p>
+          </span>
+          <span>
+            <p>Olá! Eu sou o</p>
+            <p>Edson Matimbe</p>
+          </span>
+          <span>
+            Desenvolvedor Fullstack e Designer de Interfaces & Experiência de
+            Usuário. Apaixonado pela tecnologia, procuro sempre aprender o que
+            ainda não sei. Actualmente, cursando Engenharia Electrónica com
+            Ênfase em Computação. Um dos meus principais objectivs em cada
+            trabalho que faço, é o de desenvolver soluções que satisfaçam e que
+            geram de certa forma, valor no usuário final.
+          </span>
+        </div>
+      </div>
+      <div id="services" class="services">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <div>
+            <ul>
+              <li>
+                <i class="fas fa-laptop-code"></i>
+              </li>
+              <li>Desenvolvimento Web</li>
+              <li>
+                Desenvolvimento sistemas web, páginas, blogs, sites, entre
+                outros. Foco na construcção da solução que satisfaça ao cliente.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <i class="fas fa-palette"></i>
+              </li>
+              <li>Design Web</li>
+              <li>
+                Criacção de Layouts deslumbrantes que possibilitam a geração de
+                emoções no usuário e com uma a usabilidade agradável.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <i class="fab fa-android"></i>
+                <i class="fab fa-apple"></i>
+              </li>
+              <li>Desenvolvimento de aplicativos móveis</li>
+              <li>
+                Desenvolvimento de aplicativos para dispositivos móveis e
+                desktop's de alta performance.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <i class="fas fa-bullhorn"></i>
+              </li>
+              <li>Markenting Digital</li>
+              <li>
+                Geração de valor para a sua marca usando meios digitais como
+                redes sociais (Facebook, Instagram, etc).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <span class="area-description">
+          Abaixo encontram-se as tecnologias, ferrementas e conceitos que são do
+          meu conhecimento/domínio, dê uma olhada.
+        </span>
+        <div class="skills-bar">
+          <ul class="stack">
+            <li>
+              <ul class="label">
+                <li><i class="fas fa-flutter"></i></li>
+                <li><b>Flutter</b></li>
+              </ul>
+            </li>
+            <li><progress value=".5" class="progress"></progress></li>
+            <li>50%</i></li>
+          </ul>
+          <ul class="stack">
+            <li>
+              <ul class="label">
+                <li><i class="fab fa-vuejs"></i></li>
+                <li>VueJs</li>
+              </ul>
+            </li>
+            <li><progress value=".5" class="progress"></progress></li>
+            <li>50%</li>
+          </ul>
+          <ul class="stack">
+            <li>
+              <ul class="label">
+                <li><i class="fab fa-laravel"></i></li>
+                <li>Laravel</li>
+              </ul>
+            </li>
+            <li><progress value=".5" class="progress"></progress></li>
+            <li>50%</li>
+          </ul>
+          <ul class="stack">
+            <li>
+              <ul class="label">
+                <li><i class="fab fa-node-js"></i></li>
+                <li>NodeJs</li>
+              </ul>
+            </li>
+            <li><progress value=".5" class="progress"></progress></li>
+            <li>50%</li>
+          </ul>
+        </div>
+      </div>
+      <div id="portfolio" class="portfolio" onfocus="ver()">
+        <h2>Portfolio</h2>
+        <div class="portfolio-list">
+          <div class="portfolio-element">
+            <p>Xipatxi</p>
+            <img src="img/xipatxi.png"/>
+          </div>
+          <div class="portfolio-element">
+            <img src="img/jobaki-logo.png"/>
+            <span>Encontre um job nice facilmente</span>
+          </div>
+          <div class="portfolio-element">
+            <p>Social Media</p>
+            <img src="img/codebpacote.png"/>
+          </div>
+          <div class="portfolio-element">
+            <p>SmartCon</p>
+            <img src="img/smartcon.png"/>
+          </div>
+        </div>
+      </div>
+      <div id="contact-me" class="contact-me" >
+        <h2>Contacte-me</h2>
+        <div class="contact-me-area">
+          <div class="contacts">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li>/epmatimbe</li>
+            </ul>
+            <ul>
+              <li><i class="fab fa-github"></i></li>
+              <li>/epmatimbe</li>
+            </ul>
+            <ul>
+              <li><i class="fab fa-whatsapp"></i></li>
+              <li>+(258) 84 074 6433 </li>
+            </ul>
+            <ul>
+              <li><i class="fab fa-google"></i></li>
+              <li>edmatimbe1@gmail.com </li>
+            </ul>
+            <ul>
+              <li><i class="fab fa-linkedin"></i></li>
+              <li>/edsonmatimbe</li>
+            </ul>
+            <ul>
+              <li><i class="fab fa-instagram"></i></li>
+              <li>/epmatimbe</li>
+            </ul>
+          </div>
+          <div class="start">
+            <p>Você quer começar um projecto?</p>
+            <div class="btn-start">
+              <span>
+              Sim, eu quero começar!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <ul>
+          <li onclick="scrollto('top')">
+            Home
+          </li>
+          <li onclick="scrollto('services')">
+            Serviços
+          </li>
+          <li onclick="scrollto('skills')">
+            Habilidades
+          </li>
+          <li onclick="scrollto('portfolio')">
+            Portfólio
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>
+            2020 Edson Matimbe
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      var el = document;
+      console.log(el);
+      function scrollto(str){
+        var el = document.getElementById(str);
+        console.log(el);
+        el.scrollIntoView({
+            behavior: 'smooth'
+        });
+      }
+
+      
+
+    </script>
+  </body>
+</html>

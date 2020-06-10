@@ -1,0 +1,352 @@
+:root {
+  --bg-color: #161621;
+  --bg-footer: #101018;
+  --primary-color: #292970;
+  --second-color: #202031;
+  --orange-color: #ffb633;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+h2 {
+  color: var(--orange-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+body {
+  width: 100vw;
+  background: var(--bg-color);
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+li {
+  list-style: none;
+}
+.area-description {
+  width: 40vw;
+  text-align: center;
+}
+.nav-bar {
+  width: 100%;
+  padding: 0.5rem 0;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.9rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-color);
+}
+.nav-bar ul {
+  margin: 0 auto;
+}
+.nav-bar li {
+  display: inline-block;
+  margin: auto 1%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.nav-bar li:hover {
+  border-radius: 0.2rem;
+  background: var(--second-color);
+}
+.logo {
+  border: 1px solid white;
+  padding: 0.1rem;
+  margin-right: 5%;
+  font-size: 1rem;
+  display: inline-block;
+}
+.btn-contact-me {
+  margin-left: 5%;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  font-weight: 300;
+  background-color: var(--primary-color);
+}
+.btn-contact-me:hover {
+  filter: brightness(1.22);
+}
+.banner {
+  padding-top: 2rem;
+  width: 100vw;
+  background: var(--primary-color);
+  margin: 0 auto;
+  color: white;
+}
+
+.banner div {
+  width: 49vw;
+  display: inline-block;
+}
+.banner div:first-child {
+  text-align: right;
+  padding-bottom: 2vw;
+}
+.banner div:last-child {
+  margin-top: -3px;
+}
+.banner img {
+  margin-bottom: -2.2vw;
+  width: 10vw;
+  padding-top: 5vw;
+}
+.banner li:nth-child(2) p {
+  color: var(--orange-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.introduction-area {
+  width: 100vw;
+  padding-top: 2rem;
+  margin: 0 auto;
+  color: white;
+  font-size: 0.8rem;
+  position: relative;
+  margin-top: 5vw;
+  z-index: 0;
+}
+.introduction-area div img {
+  width: 15vw;
+  float: right;
+}
+.introduction-area div {
+  width: 49vw;
+  display: inline-block;
+  text-align: left;
+}
+.introduction-area div:last-child {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  padding-left: 5vh;
+  padding-right: 20vw;
+}
+.introduction-area span:first-child p {
+  color: gray;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.introduction-area span:nth-child(2) p:last-child {
+  font-size: 0.8rem;
+  color: var(--orange-color);
+  text-transform: uppercase;
+}
+.introduction-area span:last-child {
+  font-size: 0.8rem;
+  color: white;
+}
+.services {
+  width: 100vw;
+  padding-top: 2rem;
+  margin-top: 5vw;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10vw;
+}
+.cards div {
+  color: white;
+  width: 25%;
+  margin: 5vh;
+  padding: 5vh;
+  border-radius: 0.2rem;
+  background: var(--second-color);
+}
+.fa,
+.fab,
+.fas {
+  font-size: 2rem;
+  color: var(--orange-color);
+}
+.cards li {
+  padding: 0.2rem 0;
+}
+.cards li:nth-child(2) {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.cards li:last-child {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.skills {
+  margin-top: 5vw;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+}
+.skills-bar {
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: default;
+}
+.skills-bar li {
+  display: inline-block;
+}
+
+progress {
+  background: var(--second-color);
+  border-radius: 1vw;
+}
+progress::-moz-progress-bar {
+  background: var(--orange-color);
+  border-radius: 1vw;
+}
+progress::-webkit-progress-value {
+  background: var(--orange-color);
+  border-radius: 1vw;
+}
+progress::-webkit-progress-bar {
+  background: var(--second-color);
+  border-radius: 1vw;
+}
+.progress {
+  width: 20vw;
+  margin: 0 1rem;
+}
+.progress :first-child {
+  color: red;
+}
+
+.label li {
+  display: block;
+  text-align: center;
+}
+.stack {
+  margin: 2vw 0;
+}
+.portfolio {
+  padding-top: 2rem;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.portfolio-element {
+  width: 40vw;
+  height: 30vw;
+  padding: 5vw;
+  margin: 2vw;
+  background: var(--second-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.portfolio-element p:first-child {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.portfolio-element img {
+  text-align: center;
+  width: 60%;
+}
+.portfolio-element img:last-child {
+  text-align: center;
+}
+.contact-me {
+  padding: 0% 5%;
+  margin: 10% 0;
+}
+.contact-me-area {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-wrap: wrap;
+}
+.contact-me h2 {
+  text-align: left;
+}
+.contacts {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.contacts ul li {
+  display: inline;
+  cursor: pointer;
+}
+.contacts ul {
+  padding: 1rem;
+  width: 40%;
+}
+.contacts i {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.start {
+  text-align: left;
+}
+.start p {
+  padding: 1rem 0;
+}
+.btn-start {
+  background: var(--orange-color);
+  text-align: center;
+  width: 20vw;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: normal;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.btn-start:hover {
+  filter: brightness(0.9);
+}
+
+footer {
+  background: var(--bg-footer);
+  color: white;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+footer div {
+  display: inline-block;
+}
+footer div:last-child {
+  float: right;
+}
+footer li {
+  cursor: pointer;
+  display: inline;
+  padding: 0.5rem;
+}
+
+footer li:hover {
+  background: var(--second-color);
+}
