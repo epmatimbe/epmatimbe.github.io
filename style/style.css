@@ -499,6 +499,8 @@ footer li:hover {
   }
   .cards div {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .portfolio-list {
     flex-direction: column;
