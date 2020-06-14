@@ -361,6 +361,10 @@ footer li {
 footer li:hover {
   background: var(--second-color);
 }
+.fa-copyright {
+  color: grey;
+  font-size: 0.7rem;
+}
 
 @media (max-width: 900px) {
   .banner img {
