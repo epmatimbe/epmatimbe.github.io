@@ -524,6 +524,7 @@ footer li:hover {
     display: inline-block;
     text-align: center;
     font-size: 0.8rem;
+    user-select: none;
   }
   .fa-copyright {
     color: grey;
