@@ -56,6 +56,12 @@ li {
   padding: 0.5rem;
   cursor: pointer;
 }
+.nav-bar li ~ span {
+  display: inline-block;
+}
+.fa-bars {
+  visibility: hidden;
+}
 .nav-bar li:hover {
   border-radius: 0.2rem;
   background: var(--second-color);
@@ -66,7 +72,9 @@ li {
   margin-right: 5%;
   font-size: 1rem;
   display: inline-block;
+  user-select: none;
 }
+
 .btn-contact-me {
   margin-left: 5%;
   border-radius: 0.2rem;
@@ -76,6 +84,9 @@ li {
 }
 .btn-contact-me:hover {
   filter: brightness(1.22);
+}
+.btn-contact-me i {
+  display: none;
 }
 .banner {
   padding-top: 2rem;
@@ -349,4 +360,161 @@ footer li {
 
 footer li:hover {
   background: var(--second-color);
+}
+
+@media (max-width: 900px) {
+  .banner img {
+    width: 15vw;
+    margin-bottom: -2.3vw;
+  }
+  .introduction-area div:first-child {
+    width: 40vw;
+  }
+  .introduction-area div:last-child {
+    width: 60vw;
+  }
+  .introduction-area div img {
+    width: 30vw;
+    float: right;
+  }
+  .introduction-area div:last-child {
+    padding-right: 2vw;
+  }
+  .cards div {
+    color: white;
+    width: 30%;
+    margin: 2vh;
+    padding: 5vh;
+    border-radius: 0.2rem;
+    background: var(--second-color);
+  }
+  .contacts {
+    flex-grow: 2;
+  }
+  .contacts ul {
+    padding: 1rem 0;
+    width: 50%;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .cards div {
+    color: white;
+    width: 49%;
+  }
+}
+@media (max-width: 750px) {
+  .cards div {
+    width: 30%;
+  }
+  .area-description {
+    width: 60vw;
+  }
+  .progress {
+    width: 40vw;
+  }
+  .portfolio-element {
+    width: 45vw;
+    height: 40vw;
+    padding: 0;
+  }
+  .portfolio-element img {
+    text-align: center;
+    width: 50%;
+  }
+  .contacts ul {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .btn-start {
+    width: 30vw;
+  }
+  .btn-contact-me {
+    display: none;
+  }
+  .introduction-area img {
+    width: 150%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards div {
+    color: white;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-bar li,
+  .nav-bar li ~ span {
+    display: none;
+  }
+  .logo {
+    float: left;
+    margin-left: 1rem;
+  }
+  .btn-contact-me {
+    display: none;
+  }
+  .fa-bars {
+    float: right;
+    color: white;
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin-right: 1rem;
+    visibility: visible;
+  }
+  .banner img {
+    width: 30vw;
+    margin-bottom: -0.8rem;
+  }
+  .introduction-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .introduction-area div {
+    width: 49%;
+  }
+  .introduction-area div img {
+    width: 80%;
+  }
+  .introduction-area div:last-child {
+    font-size: 0.9rem;
+    padding-left: 5vh;
+    padding-right: 0;
+    width: 60%;
+    position: relative;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards div {
+    width: 100%;
+  }
+  .portfolio-list {
+    flex-direction: column;
+  }
+  .portfolio-element {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  .contact-me-area {
+    padding-left: 2rem;
+  }
+  .btn-start {
+    width: 80%;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer div:last-child {
+    padding-top: 1rem;
+    float: none;
+    font-size: 0.9rem;
+    color: grey;
+  }
 }

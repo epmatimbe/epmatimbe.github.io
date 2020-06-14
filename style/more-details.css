@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #161621;
+  --bg-footer: #101018;
+  --primary-color: #292970;
+  --second-color: #202031;
+  --orange-color: #ffb633;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+section {
+  background: var(--second-color);
+  color: white;
+  padding: 10vw;
+  padding-bottom: 15vw;
+}
+section img {
+  width: 50%;
+  padding: 5%;
+}
+
+@media (max-width: 700px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .btn-contact-me {
+    display: none;
+  }
+  section img {
+    width: 100%;
+    padding: 5%;
+  }
+}
